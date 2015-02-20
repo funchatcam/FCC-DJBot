@@ -1,0 +1,16 @@
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\DJBot.exe.config
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\DJBot.exe
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\DJBot.pdb
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\FCC.dll
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\FCC.pdb
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.csprojResolveAssemblyReference.cache
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.Form1.resources
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.Properties.Resources.resources
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.csproj.GenerateResource.Cache
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.exe
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.pdb
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\Newtonsoft.Json.dll
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\SpotifyAPI.dll
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\Newtonsoft.Json.xml
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\SpotifyAPI.xml
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\System.Data.SQLite.dll
