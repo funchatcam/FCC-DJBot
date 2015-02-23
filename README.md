@@ -7,6 +7,11 @@ Users are able to request songs & playlists.
 
 It is recommended to have a Spotify Premium account for the best experience.
 
+#### Requirements
+
+The FCC.dll is required for chat client functionality.
+This can be downloaded here: https://github.com/funchatcam/FCCAPI-NET/releases
+
 #### Commands:
 
 !play - Keys up & starts playback the current queued playlist or song in Spotify.<br>
