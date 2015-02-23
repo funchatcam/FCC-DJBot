@@ -14,3 +14,7 @@ c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\Spotify
 c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\Newtonsoft.Json.xml
 c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\SpotifyAPI.xml
 c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\System.Data.SQLite.dll
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\DJBot.exe.manifest
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\DJBot.application
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.exe.manifest
+c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.application

@@ -14,5 +14,8 @@
     <Setting Name="CurrentSongTitle" Type="System.String" Scope="User">
       <Value Profile="(Default)">label5</Value>
     </Setting>
+    <Setting Name="Answered" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

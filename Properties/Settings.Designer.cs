@@ -70,5 +70,17 @@ namespace DJBot.Properties {
                 this["CurrentSongTitle"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Answered {
+            get {
+                return ((bool)(this["Answered"]));
+            }
+            set {
+                this["Answered"] = value;
+            }
+        }
     }
 }
