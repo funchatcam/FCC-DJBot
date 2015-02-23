@@ -2,7 +2,7 @@
 
 #### Bot for Funchatcam Webcam Chatsite
 
-This bot enables users to automate music via Spotify in their Funchatcam rooms.
+This bot enables users to automate music via Spotify in their Funchatcam rooms.<br>
 Users are able to request songs & playlists.
 
 It is recommended to have a Spotify Premium account for the best experience.
