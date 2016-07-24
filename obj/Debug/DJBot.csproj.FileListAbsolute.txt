@@ -18,3 +18,7 @@ c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\DJBot.e
 c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\bin\Debug\DJBot.application
 c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.exe.manifest
 c:\Users\louis\documents\visual studio 2013\Projects\FCC\DJBot\obj\Debug\DJBot.application
+C:\Users\louis\Source\Repos\FCC-DJBot\obj\Debug\DJBot.Form1.resources
+C:\Users\louis\Source\Repos\FCC-DJBot\obj\Debug\DJBot.Properties.Resources.resources
+C:\Users\louis\Source\Repos\FCC-DJBot\obj\Debug\DJBot.csproj.GenerateResource.Cache
+C:\Users\louis\Source\Repos\FCC-DJBot\obj\Debug\DJBot.csprojResolveAssemblyReference.cache

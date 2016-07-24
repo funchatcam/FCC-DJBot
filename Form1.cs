@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FCC;
-using SpotifyAPI.SpotifyLocalAPI;
+using SpotifyAPI.Local;
+using SpotifyAPI.Local.Enums;
+using SpotifyAPI.Local.Models;
 using System.Threading;
-using SpotifyEventHandler = SpotifyAPI.SpotifyLocalAPI.SpotifyEventHandler;
 using System.Media;
 using System.Data.SQLite;
 
@@ -19,9 +20,9 @@ namespace DJBot
     public partial class Form1 : Form
     {
         static FCC.Chat fcc;
-        SpotifyLocalAPIClass spotify;
-        SpotifyMusicHandler mh;
-        SpotifyEventHandler eh;
+
+        private readonly SpotifyLocalAPI _spotify;
+        private Track _currentTrack;
 
         // Holds our connection with the database
         SQLiteConnection m_dbConnection;
@@ -31,6 +32,13 @@ namespace DJBot
 
             InitializeComponent();
 
+            _spotify = new SpotifyLocalAPI();
+            _spotify.OnPlayStateChange += _spotify_OnPlayStateChange;
+            _spotify.OnTrackChange += _spotify_OnTrackChange;
+            _spotify.OnTrackTimeChange += _spotify_OnTrackTimeChange;
+            _spotify.OnVolumeChange += _spotify_OnVolumeChange;
+            _spotify.SynchronizingObject = this;
+
             connectToDatabase();
             //createTable();
             //fillTable();
@@ -39,14 +47,7 @@ namespace DJBot
             Properties.Settings.Default.Answered = false;
             Properties.Settings.Default.Save();
 
-            spotify = new SpotifyLocalAPIClass();
-            if (!SpotifyLocalAPIClass.IsSpotifyRunning())
-            {
-                spotify.RunSpotify();
-                Thread.Sleep(5000);
-            }
-
-            if (!SpotifyLocalAPIClass.IsSpotifyWebHelperRunning())
+            if (!SpotifyLocalAPI.IsSpotifyWebHelperRunning())
             {
                 spotify.RunSpotifyWebHelper();
                 Thread.Sleep(4000);
