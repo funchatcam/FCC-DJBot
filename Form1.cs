@@ -33,11 +33,11 @@ namespace DJBot
             InitializeComponent();
 
             _spotify = new SpotifyLocalAPI();
-            _spotify.OnPlayStateChange += _spotify_OnPlayStateChange;
-            _spotify.OnTrackChange += _spotify_OnTrackChange;
-            _spotify.OnTrackTimeChange += _spotify_OnTrackTimeChange;
-            _spotify.OnVolumeChange += _spotify_OnVolumeChange;
-            _spotify.SynchronizingObject = this;
+            //_spotify.OnPlayStateChange += _spotify_OnPlayStateChange;
+            //_spotify.OnTrackChange += _spotify_OnTrackChange;
+            //_spotify.OnTrackTimeChange += _spotify_OnTrackTimeChange;
+            //_spotify.OnVolumeChange += _spotify_OnVolumeChange;
+            //_spotify.SynchronizingObject = this;
 
             connectToDatabase();
             //createTable();
@@ -49,18 +49,19 @@ namespace DJBot
 
             if (!SpotifyLocalAPI.IsSpotifyWebHelperRunning())
             {
-                spotify.RunSpotifyWebHelper();
+                //spotify.RunSpotifyWebHelper();
+                SpotifyLocalAPI.RunSpotifyWebHelper();
                 Thread.Sleep(4000);
             }
 
-            if (!spotify.Connect())
+            if (!_spotify.Connect())
             {
                 Boolean retry = true;
                 while (retry)
                 {
                     if (MessageBox.Show("SpotifyLocalAPIClass could'nt load!", "Error", MessageBoxButtons.RetryCancel) == System.Windows.Forms.DialogResult.Retry)
                     {
-                        if (spotify.Connect())
+                        if (_spotify.Connect())
                             retry = false;
                         else
                             retry = true;
@@ -72,8 +73,9 @@ namespace DJBot
                     }
                 }
             }
-            mh = spotify.GetMusicHandler();
-            eh = spotify.GetEventHandler();
+            //mh = _spotify.GetMusicHandler();
+           
+            eh = _spotify.GetEventHandler();
 
             eh.OnTrackChange += new SpotifyEventHandler.TrackChangeEventHandler(trackchange);
             eh.OnTrackTimeChange += new SpotifyEventHandler.TrackTimeChangeEventHandler(timechange);
